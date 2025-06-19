@@ -91,35 +91,207 @@
             </div>
         </div>
     </div>
-    <!-- Product Listings (dùng card hoặc accordion giống test.html nếu muốn) -->
-    <div class="row g-4">
-        <div class="col-lg-4">
-            <div class="card h-100">
-                <div class="card-header bg-dark text-white">NẠP GENSHIN IMPACT</div>
-                <div class="card-body">
-                    <a href="{{ route('genshin.monthly') }}" class="d-block mb-2">Thẻ tháng Genshin Impact</a>
-                    <a href="{{ route('genshin.crystals') }}" class="d-block mb-2">Đá Sáng Thế</a>
+    <!-- Product Listings -->
+    <div class="row">
+        <div class="col-lg-6 mb-3">
+            <div class="mt-3">
+                <div class="d-flex align-items-center mb-3">
+                    <div class="flex-shrink-0 me-1">
+                        <i class="menu-icon me-1">
+                            <img width="40" src="{{ asset('assets/storage/images/categorySMUB.png') }}">
+                        </i>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h5 class="fs-16 mb-0 fw-semibold">NẠP GENSHIN IMPACT</h5>
+                    </div>
+                </div>
+                <div class="accordion" id="accordionGenshin">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingGenshin1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGenshin1" aria-expanded="false" aria-controls="collapseGenshin1">
+                                Thẻ tháng Genshin Impact
+                            </button>
+                        </h2>
+                        <div id="collapseGenshin1" class="accordion-collapse collapse" aria-labelledby="headingGenshin1" data-bs-parent="#accordionGenshin">
+                            <div class="accordion-body">
+                                <a href="{{ route('genshin.monthly') }}" class="btn btn-outline-primary w-100 mb-2 d-flex justify-content-between align-items-center">
+                                    <span>Không Nguyệt Chúc Phúc (Thẻ Tháng)</span>
+                                    <span class="badge bg-primary">Giá 95.000đ</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingGenshin2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGenshin2" aria-expanded="false" aria-controls="collapseGenshin2">
+                                Đá Sáng Thế
+                            </button>
+                        </h2>
+                        <div id="collapseGenshin2" class="accordion-collapse collapse" aria-labelledby="headingGenshin2" data-bs-parent="#accordionGenshin">
+                            <div class="accordion-body">
+                                <a href="{{ route('genshin.crystals') }}" class="btn btn-outline-primary w-100 mb-2 d-flex justify-content-between align-items-center">
+                                    <span>60 Đá Sáng Thế</span>
+                                    <span class="badge bg-primary">Giá 23.000đ</span>
+                                </a>
+                                <a href="{{ route('genshin.crystals') }}" class="btn btn-outline-primary w-100 mb-2 d-flex justify-content-between align-items-center">
+                                    <span>300 + 30 Đá Sáng Thế</span>
+                                    <span class="badge bg-primary">Giá 95.000đ</span>
+                                </a>
+                                <a href="{{ route('genshin.crystals') }}" class="btn btn-outline-primary w-100 mb-2 d-flex justify-content-between align-items-center">
+                                    <span>980 + 110 Đá Sáng Thế</span>
+                                    <span class="badge bg-primary">Giá 290.000đ</span>
+                                </a>
+                                <a href="{{ route('genshin.crystals') }}" class="btn btn-outline-primary w-100 mb-2 d-flex justify-content-between align-items-center">
+                                    <span>1980 + 260 Đá Sáng Thế</span>
+                                    <span class="badge bg-primary">Giá 635.000đ</span>
+                                </a>
+                                <a href="{{ route('genshin.crystals') }}" class="btn btn-outline-primary w-100 mb-2 d-flex justify-content-between align-items-center">
+                                    <span>3280 + 600 Đá Sáng Thế</span>
+                                    <span class="badge bg-primary">Giá 950.000đ</span>
+                                </a>
+                                <a href="{{ route('genshin.crystals') }}" class="btn btn-outline-primary w-100 mb-2 d-flex justify-content-between align-items-center">
+                                    <span>6480 + 1600 Đá Sáng Thế</span>
+                                    <span class="badge bg-primary">Giá 1.950.000đ</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-lg-4">
-            <div class="card h-100">
-                <div class="card-header bg-dark text-white">NẠP HONKAI STAR RAIL</div>
-                <div class="card-body">
-                    <a href="{{ route('honkai.monthly') }}" class="d-block mb-2">Thẻ tháng Honkai Star Rail</a>
-                    <a href="{{ route('honkai.dreams') }}" class="d-block mb-2">Mộng Ước Viễn Cổ</a>
+        <div class="col-lg-6 mb-3">
+            <div class="mt-3">
+                <div class="d-flex align-items-center mb-3">
+                    <div class="flex-shrink-0 me-1">
+                        <i class="menu-icon me-1">
+                            <img width="40" src="{{ asset('assets/storage/images/categoryDLQN.png') }}">
+                        </i>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h5 class="fs-16 mb-0 fw-semibold">NẠP HONKAI STAR RAIL</h5>
+                    </div>
+                </div>
+                <div class="accordion" id="accordionHSR">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingHSR1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHSR1" aria-expanded="false" aria-controls="collapseHSR1">
+                                Thẻ tháng Honkai Star Rail
+                            </button>
+                        </h2>
+                        <div id="collapseHSR1" class="accordion-collapse collapse" aria-labelledby="headingHSR1" data-bs-parent="#accordionHSR">
+                            <div class="accordion-body">
+                                <a href="{{ route('honkai.monthly') }}" class="btn btn-outline-primary w-100 mb-2 d-flex justify-content-between align-items-center">
+                                    <span>Chứng Nhận Tiếp Tế Đội Tàu (Thẻ Tháng)</span>
+                                    <span class="badge bg-primary">Giá 95.000đ</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingHSR2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHSR2" aria-expanded="false" aria-controls="collapseHSR2">
+                                Mộng Ước Viễn Cổ
+                            </button>
+                        </h2>
+                        <div id="collapseHSR2" class="accordion-collapse collapse" aria-labelledby="headingHSR2" data-bs-parent="#accordionHSR">
+                            <div class="accordion-body">
+                                <a href="{{ route('honkai.dreams') }}" class="btn btn-outline-primary w-100 mb-2 d-flex justify-content-between align-items-center">
+                                    <span>60 Mộng Ước Viễn Cổ</span>
+                                    <span class="badge bg-primary">Giá 23.000đ</span>
+                                </a>
+                                <a href="{{ route('honkai.dreams') }}" class="btn btn-outline-primary w-100 mb-2 d-flex justify-content-between align-items-center">
+                                    <span>300 + 30 Mộng Ước Viễn Cổ</span>
+                                    <span class="badge bg-primary">Giá 95.000đ</span>
+                                </a>
+                                <a href="{{ route('honkai.dreams') }}" class="btn btn-outline-primary w-100 mb-2 d-flex justify-content-between align-items-center">
+                                    <span>980 + 110 Mộng Ước Viễn Cổ</span>
+                                    <span class="badge bg-primary">Giá 295.000đ</span>
+                                </a>
+                                <a href="{{ route('honkai.dreams') }}" class="btn btn-outline-primary w-100 mb-2 d-flex justify-content-between align-items-center">
+                                    <span>1980 + 260 Mộng Ước Viễn Cổ</span>
+                                    <span class="badge bg-primary">Giá 615.000đ</span>
+                                </a>
+                                <a href="{{ route('honkai.dreams') }}" class="btn btn-outline-primary w-100 mb-2 d-flex justify-content-between align-items-center">
+                                    <span>3280 + 600 Mộng Ước Viễn Cổ</span>
+                                    <span class="badge bg-primary">Giá 975.000đ</span>
+                                </a>
+                                <a href="{{ route('honkai.dreams') }}" class="btn btn-outline-primary w-100 mb-2 d-flex justify-content-between align-items-center">
+                                    <span>6480 + 1600 Mộng Ước Viễn Cổ</span>
+                                    <span class="badge bg-primary">Giá 1.950.000đ</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-lg-4">
-            <div class="card h-100">
-                <div class="card-header bg-dark text-white">NẠP ZENLESS ZONE ZERO</div>
-                <div class="card-body">
-                    <a href="{{ route('zenless.monthly') }}" class="d-block mb-2">Thẻ tháng Zenless Zone Zero</a>
-                    <a href="{{ route('zenless.film') }}" class="d-block mb-2">Film Truyền Đen</a>
+        <div class="col-lg-6 mb-3">
+            <div class="mt-3">
+                <div class="d-flex align-items-center mb-3">
+                    <div class="flex-shrink-0 me-1">
+                        <i class="menu-icon me-1">
+                            <img width="40" src="{{ asset('assets/storage/images/iconQJOA.png') }}">
+                        </i>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h5 class="fs-16 mb-0 fw-semibold">NẠP ZENLESS ZONE ZERO</h5>
+                    </div>
+                </div>
+                <div class="accordion" id="accordionZZZ">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingZZZ1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseZZZ1" aria-expanded="false" aria-controls="collapseZZZ1">
+                                Thẻ tháng Zenless Zone Zero
+                            </button>
+                        </h2>
+                        <div id="collapseZZZ1" class="accordion-collapse collapse" aria-labelledby="headingZZZ1" data-bs-parent="#accordionZZZ">
+                            <div class="accordion-body">
+                                <a href="{{ route('zenless.monthly') }}" class="btn btn-outline-primary w-100 mb-2 d-flex justify-content-between align-items-center">
+                                    <span>Hội Viên Inter-Knot (Thẻ Tháng)</span>
+                                    <span class="badge bg-primary">Giá 105.000đ</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingZZZ2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseZZZ2" aria-expanded="false" aria-controls="collapseZZZ2">
+                                Film Truyền Đen
+                            </button>
+                        </h2>
+                        <div id="collapseZZZ2" class="accordion-collapse collapse" aria-labelledby="headingZZZ2" data-bs-parent="#accordionZZZ">
+                            <div class="accordion-body">
+                                <a href="{{ route('zenless.film') }}" class="btn btn-outline-primary w-100 mb-2 d-flex justify-content-between align-items-center">
+                                    <span>60 Film Trắng Đen</span>
+                                    <span class="badge bg-primary">Giá 23.000đ</span>
+                                </a>
+                                <a href="{{ route('zenless.film') }}" class="btn btn-outline-primary w-100 mb-2 d-flex justify-content-between align-items-center">
+                                    <span>300 + 30 Film Trắng Đen</span>
+                                    <span class="badge bg-primary">Giá 105.000đ</span>
+                                </a>
+                                <a href="{{ route('zenless.film') }}" class="btn btn-outline-primary w-100 mb-2 d-flex justify-content-between align-items-center">
+                                    <span>980 + 110 Film Trắng Đen</span>
+                                    <span class="badge bg-primary">Giá 315.000đ</span>
+                                </a>
+                                <a href="{{ route('zenless.film') }}" class="btn btn-outline-primary w-100 mb-2 d-flex justify-content-between align-items-center">
+                                    <span>1980 + 260 Film Trắng Đen</span>
+                                    <span class="badge bg-primary">Giá 670.000đ</span>
+                                </a>
+                                <a href="{{ route('zenless.film') }}" class="btn btn-outline-primary w-100 mb-2 d-flex justify-content-between align-items-center">
+                                    <span>3280 + 600 Film Trắng Đen</span>
+                                    <span class="badge bg-primary">Giá 1.050.000đ</span>
+                                </a>
+                                <a href="{{ route('zenless.film') }}" class="btn btn-outline-primary w-100 mb-2 d-flex justify-content-between align-items-center">
+                                    <span>6480 + 1600 Film Trắng Đen</span>
+                                    <span class="badge bg-primary">Giá 2.100.000đ</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- End Product Listings -->
 </div> 
 @endsection
