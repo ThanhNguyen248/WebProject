@@ -71,13 +71,35 @@
         </div>
     </div>
     <!-- Welcome Section -->
-    <div class="card mb-4">
+    <div class="card mb-4 welcome-bg position-relative">
+        <img src="{{ asset('images\download__3_-removebg-preview.png') }}" alt="icon" style="position:absolute;top:20px;right:50px;width:200px;height:200px;z-index:2;">
         <div class="card-body">
             <h4 class="display-6">WELCOME BACK! {{ Auth::check() ? Auth::user()->name : 'Khách' }}!</h4>
-            <p class="mt-3"><b>Hướng dẫn nạp game tại JD-Shop:</b> <a href="#" class="text-primary">Xem tại đây</a></p>
-            <p><b>Discord hỗ trợ:</b> <a href="#" class="text-primary">Bấm vào đây</a></p>
-            <p><b>Nhắn Zalo:</b> <a href="#" class="text-primary">Bấm vào đây</a></p>
-            <p><b>Cần trợ giúp liên hệ:</b> <a href="#" class="text-primary">Facebook</a> - <a href="#" class="text-primary">Zalo</a> - <a href="#" class="text-primary">Discord</a></p>
+            <p class="mt-3">
+                <span class="fw-bold fs-5">
+                    <img src="{{ asset('images/unnamed (1).png') }}" alt="Youtube" width="26" class="me-1 align-middle">
+                    Hướng dẫn nạp game tại JD-Shop:
+                </span>
+                <a href="#" class="text-primary">Xem tại đây</a>
+            </p>
+            <p>
+                <span class="fw-bold fs-5">
+                    <img src="{{ asset('images/discord.png') }}" alt="Discord" width="26" class="me-1 align-middle">
+                    Discord hỗ trợ:
+                </span>
+                <a href="#" class="text-primary">Bấm vào đây</a>
+            </p>
+            <p>
+                <span class="fw-bold fs-5">
+                    <img src="{{ asset('images/ico_zalo_chat.png') }}" alt="Zalo" width="26" class="me-1 align-middle">
+                    Nhắn Zalo:
+                </span>
+                <a href="#" class="text-primary">Bấm vào đây</a>
+            </p>
+            <p>
+                <span class="fw-bold fs-5">Cần trợ giúp liên hệ:</span>
+                <a href="#" class="text-primary">Facebook</a> - <a href="#" class="text-primary">Zalo</a> - <a href="#" class="text-primary">Discord</a>
+            </p>
             <div class="mt-4">
                 @if (!Auth::check())
                     <a href="{{ route('login') }}" class="btn btn-danger me-2">Đăng nhập</a>
@@ -97,9 +119,7 @@
             <div class="mt-3">
                 <div class="d-flex align-items-center mb-3">
                     <div class="flex-shrink-0 me-1">
-                        <i class="menu-icon me-1">
-                            <img width="40" src="{{ asset('assets/storage/images/categorySMUB.png') }}">
-                        </i>
+                        <img width="40" src="{{ asset('images/genshin.png') }}" alt="Genshin Impact">
                     </div>
                     <div class="flex-grow-1">
                         <h5 class="fs-16 mb-0 fw-semibold">NẠP GENSHIN IMPACT</h5>
@@ -109,6 +129,7 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingGenshin1">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGenshin1" aria-expanded="false" aria-controls="collapseGenshin1">
+                                <img src="{{ asset('images/chucphuc.png') }}" alt="Chúc Phúc" width="25" class="me-2 align-middle">
                                 Thẻ tháng Genshin Impact
                             </button>
                         </h2>
@@ -124,6 +145,7 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingGenshin2">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGenshin2" aria-expanded="false" aria-controls="collapseGenshin2">
+                                <img src="{{ asset('images/dasangthe.png') }}" alt="Đá Sáng Thế" width="25" class="me-2 align-middle">
                                 Đá Sáng Thế
                             </button>
                         </h2>
@@ -163,9 +185,7 @@
             <div class="mt-3">
                 <div class="d-flex align-items-center mb-3">
                     <div class="flex-shrink-0 me-1">
-                        <i class="menu-icon me-1">
-                            <img width="40" src="{{ asset('assets/storage/images/categoryDLQN.png') }}">
-                        </i>
+                        <img width="40" src="{{ asset('images/honkai.png') }}" alt="Honkai Star Rail">
                     </div>
                     <div class="flex-grow-1">
                         <h5 class="fs-16 mb-0 fw-semibold">NẠP HONKAI STAR RAIL</h5>
@@ -175,6 +195,7 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingHSR1">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHSR1" aria-expanded="false" aria-controls="collapseHSR1">
+                                <img src="{{ asset('images/tieptedoitau.png') }}" alt="Tiếp Tế Đội Tàu" width="25" class="me-2 align-middle">
                                 Thẻ tháng Honkai Star Rail
                             </button>
                         </h2>
@@ -190,6 +211,7 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingHSR2">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHSR2" aria-expanded="false" aria-controls="collapseHSR2">
+                                <img src="{{ asset('images/monguoc.png') }}" alt="Mộng Ước" width="25" class="me-2 align-middle">
                                 Mộng Ước Viễn Cổ
                             </button>
                         </h2>
@@ -229,9 +251,7 @@
             <div class="mt-3">
                 <div class="d-flex align-items-center mb-3">
                     <div class="flex-shrink-0 me-1">
-                        <i class="menu-icon me-1">
-                            <img width="40" src="{{ asset('assets/storage/images/iconQJOA.png') }}">
-                        </i>
+                        <img width="40" src="{{ asset('images/zenless.png') }}" alt="Zenless Zone Zero">
                     </div>
                     <div class="flex-grow-1">
                         <h5 class="fs-16 mb-0 fw-semibold">NẠP ZENLESS ZONE ZERO</h5>
@@ -241,6 +261,7 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingZZZ1">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseZZZ1" aria-expanded="false" aria-controls="collapseZZZ1">
+                                <img src="{{ asset('images/HoivienInterKnot.png') }}" alt="Hội Viên" width="25" class="me-2 align-middle">
                                 Thẻ tháng Zenless Zone Zero
                             </button>
                         </h2>
@@ -256,6 +277,7 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingZZZ2">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseZZZ2" aria-expanded="false" aria-controls="collapseZZZ2">
+                                <img src="{{ asset('images/film.png') }}" alt="Film Trắng Đen" width="25" class="me-2 align-middle">
                                 Film Truyền Đen
                             </button>
                         </h2>
